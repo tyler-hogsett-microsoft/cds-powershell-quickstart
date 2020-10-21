@@ -6,7 +6,7 @@ param(
       "$PSScriptRoot\..\temp\packed-solutions\$($solutionName).zip"
     }
   }),
-  $solutionFolder = (% {
+  $solutionFolderPath = (% {
     $context = . $PSScriptRoot\Get-Context.ps1
     if($context) {
       "$PSScriptRoot\..\$($context.SolutionFolder)"
@@ -21,4 +21,4 @@ SolutionPackager `
   /action:$action `
   /zipfile:$zipFilePath `
   /packagetype:$packageType `
-  /folder:$solutionFolder
+  /folder:$solutionFolderPath

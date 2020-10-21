@@ -27,7 +27,7 @@ if($PSCmdlet.ParameterSetName -eq "Dev") {
     -action Pack `
     -solutionName $SolutionUniqueName `
     -zipFilePath $SolutionFilePath `
-    -solutionFolder $SolutionFolder `
+    -solutionFolderPath $SolutionFolder `
     -packageType (% { if($Managed) { "Managed" } else { "Unmanaged" } })
 } else {
   $Connection = Get-CrmConnection -ConnectionString $ConnectionString
