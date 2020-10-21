@@ -60,4 +60,4 @@ if($UseBasicAuthentication)
 }
 
 $context | ConvertTo-Json `
-| Out-File "$PSScriptRoot\..\local.config.json"
+| Out-File "$PSScriptRoot\local.config.json"
