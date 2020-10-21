@@ -1,4 +1,5 @@
 param(
+  $action,
   $solutionName = (. $PSScriptRoot\Get-SolutionName.ps1),
   $zipFilePath = (% {
     if ($solutionName) {
@@ -17,7 +18,7 @@ param(
 Set-Alias SolutionPackager "$PSScriptRoot\..\nuget-tools\CoreTools\SolutionPackager.exe"
 
 SolutionPackager `
-  /action:Pack `
+  /action:$action `
   /zipfile:$zipFilePath `
   /packagetype:$packageType `
   /folder:$solutionFolder
