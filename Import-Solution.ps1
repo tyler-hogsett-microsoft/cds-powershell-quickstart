@@ -32,7 +32,7 @@ if($PSCmdlet.ParameterSetName -eq "Dev") {
 } else {
   $Connection = Get-CrmConnection -ConnectionString $ConnectionString
 }
-<#
+
 Import-CrmSolution `
   -conn $Connection `
   -SolutionFilePath $SolutionFilePath `
@@ -41,4 +41,3 @@ if(-not $Managed) {
   Publish-CrmAllCustomization `
     -conn $Connection
 }
-#>
