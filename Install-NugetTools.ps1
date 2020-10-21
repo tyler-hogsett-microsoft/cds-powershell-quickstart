@@ -1,7 +1,7 @@
-$tempFolder = "$PSScriptRoot\..\temp"
+$tempFolder = "$PSScriptRoot\temp"
 md $tempFolder -ErrorAction Ignore
 
-$toolsFolder = "$PSScriptRoot\..\nuget-tools"
+$toolsFolder = "$PSScriptRoot\nuget-tools"
 
 $sourceNugetExe = "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe"
 $targetNugetExe = "$tempFolder\nuget.exe"
@@ -30,9 +30,9 @@ function Install-NugetTool {
 }
 
 # Install-NugetTool Microsoft.CrmSdk.XrmTooling.PluginRegistrationTool
-Install-NugetTool Microsoft.CrmSdk.CoreTools `
-  -ToolPath "content\bin\coretools"
-# Install-NugetTool Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf -FriendlyName "ConfigurationMigration"
+<#Install-NugetTool Microsoft.CrmSdk.CoreTools `
+  -ToolPath "content\bin\coretools"#>
+Install-NugetTool Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf -FriendlyName "ConfigurationMigration"
 # Install-NugetTool Microsoft.CrmSdk.XrmTooling.PackageDeployment.WPF ` -FriendlyName "PackageDeployment"
 
 Remove-Item "$tempFolder\nuget.exe"

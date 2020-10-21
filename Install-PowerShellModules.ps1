@@ -14,4 +14,4 @@ function Install-ModuleLocally {
 }
 
 Install-ModuleLocally "Microsoft.Xrm.Tooling.CrmConnector.Powershell"
-Install-ModuleLocally "Microsoft.Xrm.Data.PowerShell"
+Install-ModuleLocally "Microsoft.Xrm.Tooling.ConfigurationMigration"
