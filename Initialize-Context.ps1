@@ -3,20 +3,7 @@
 param(
   [Parameter(Mandatory=$true)]
   [string]$Url,
-  [Parameter(Mandatory=$true)]
-  [string]$SolutionFolder,
-  [string]$SolutionUniqueName = (% {
-    $solutionXmlFilePath = "$PSScriptRoot\..\$SolutionFolder\Other\solution.xml"
-    if(Test-Path $solutionXmlFilePath) {
-      $solutionXml = [xml](Get-Content $solutionXmlFilePath)
-      $solutionXml.SelectSingleNode(
-        "/ImportExportXml/SolutionManifest/UniqueName"
-      ).InnerText
-    } else {
-      Read-Host -Prompt "UniqueName"
-    }
-  }),
-
+  
   [Parameter(
     Mandatory=$true,
     ParameterSetName="ClientSecretAuthentication")]
@@ -52,9 +39,7 @@ param(
 )
 
 $context = @{
-  Url = $Url;
-  SolutionFolder = $SolutionFolder;
-  SolutionUniqueName = $SolutionUniqueName
+  Url = $Url
 }
 if($UseBasicAuthentication)
 {
