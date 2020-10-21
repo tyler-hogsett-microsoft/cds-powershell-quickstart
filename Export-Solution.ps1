@@ -35,6 +35,12 @@ Remove-Item $tempUnpackedFolder -ErrorAction Ignore -Recurse
   -solutionFolderPath $tempUnpackedFolder `
   -packageType Unmanaged
 
+$solutionXml = New-Object xml
+$solutionXml.Load("$tempUnpackedFolder\Other\solution.xml")
+$managedNode = $solutionXml.SelectSingleNode("/ImportExportXml/SolutionManifest/Managed")
+$managedNode.InnerText = "2"
+$solutionXml.Save("$tempUnpackedFolder\Other\solution.xml")
+
 $solutionFolderPath = "$PSScriptRoot\..\$SolutionFolder"
 Remove-Item $solutionFolderPath -Recurse -ErrorAction Ignore
 Copy-Item `
