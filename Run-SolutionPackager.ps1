@@ -21,4 +21,5 @@ SolutionPackager `
   /action:$action `
   /zipfile:$zipFilePath `
   /packagetype:$packageType `
-  /folder:$solutionFolderPath
+  /folder:$solutionFolderPath `
+  /useUnmanagedFileForMissingManaged

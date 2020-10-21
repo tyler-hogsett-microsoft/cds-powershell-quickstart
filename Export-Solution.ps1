@@ -18,12 +18,12 @@ Export-CrmSolution `
   -SolutionFilePath $SolutionZipFolderPath `
   -SolutionZipFileName $SolutionZipFileName
 
-Export-CrmSolution `
+<#Export-CrmSolution `
   -conn $Connection `
   -SolutionName $SolutionUniqueName `
   -SolutionFilePath $SolutionZipFolderPath `
   -SolutionZipFileName ("$SolutionZipFileName" -Replace "\.zip`$", "_managed.zip") `
-  -Managed
+  -Managed#>
 
 $tempUnpackedFolder = "$PSScriptRoot\..\temp\unpacked-solution"
 Remove-Item $tempUnpackedFolder -ErrorAction Ignore -Recurse
@@ -33,10 +33,10 @@ Remove-Item $tempUnpackedFolder -ErrorAction Ignore -Recurse
   -solutionName $SolutionUniqueName `
   -zipFilePath "$SolutionZipFolderPath\$SolutionZipFileName" `
   -solutionFolderPath $tempUnpackedFolder `
-  -packageType Both
+  -packageType Unmanaged
 
 $solutionFolderPath = "$PSScriptRoot\..\$SolutionFolder"
-Remove-Item $solutionFolderPath -Recurse
+Remove-Item $solutionFolderPath -Recurse -ErrorAction Ignore
 Copy-Item `
   -Path $tempUnpackedFolder `
   -Destination $solutionFolderPath `
