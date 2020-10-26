@@ -42,6 +42,7 @@ function Add-FetchXmlToChildEntity
         [Parameter(Mandatory=$true)]
         [string]$ParentEntityName,
         [string]$ParentEntityLookupName = "$($ParentEntityName)id",
+        [string]$ParentEntityKey = "$($ParentEntityName)id",
         [string]$ParentEntityWebsiteLookupName = "adx_websiteid",
         [string]$GrandparentEntityName,
         [string]$GrandparentEntityLookupName = "$($GrandParentEntityName)id",
@@ -58,7 +59,7 @@ function Add-FetchXmlToChildEntity
         "<fetch>" +
             "<entity name=`"$EntityName`">" +
                 "<attribute name=`"$($EntityName)id`" />" +
-                "<link-entity name=`"$ParentEntityName`" from=`"$ParentEntityLookupName`" to=`"$($ParentEntityName)id`">" +
+                "<link-entity name=`"$ParentEntityName`" from=`"$ParentEntityKey`" to=`"$ParentEntityLookupName`">" +
                     (% {
                         if([string]::IsNullOrEmpty($GrandParentEntityName)) {
                             "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"$ParentEntityWebsiteLookupName`">" +
@@ -67,7 +68,7 @@ function Add-FetchXmlToChildEntity
                                 "</filter>" +
                             "</link-entity>"
                         } else {
-                            "<link-entity name=`"$GrandparentEntityName`" from=`"$GrandparentEntityLookupName`" to=`"$($GrandparentEntityName)id`">" +
+                            "<link-entity name=`"$GrandparentEntityName`" from=`"$($GrandparentEntityName)id`" to=`"$GrandparentEntityLookupName`">" +
                                 "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"$GrandparentEntityWebsiteLookupName`">" +
                                     "<filter>" +
                                         "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
@@ -114,5 +115,11 @@ Add-FetchXmlToChildEntity `
     -EntityName "adx_communityforumaccesspermission" `
     -ParentEntityName "adx_communityforum" `
     -ParentEntityLookupName "adx_forumid"
+Add-FetchXmlToChildEntity `
+    -EntityName "adx_contentaccesslevel" `
+    -ParentEntityName "adx_webrolecontentaccesslevel" `
+    -ParentEntityLookupName "adx_contentaccesslevelid" `
+    -ParentEntityKey "adx_contentaccesslevelid" `
+    -GrandparentEntityName "adx_webrole"
 
 $schemaXml.Save($Path)
