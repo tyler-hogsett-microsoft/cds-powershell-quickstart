@@ -26,9 +26,12 @@ While ($job.State -eq "Running") {}
 Receive-Job $job | Out-Null
 
 $logsPath = "$tempFolder\logs\portal-import"
-New-Item $logsPath -ItemType Directory -ErrorAction Ignore
+New-Item $logsPath -ItemType Directory -ErrorAction Ignore | Out-Null
 
 Import-CrmDataFile `
     -CrmConnection $Connection `
     -DataFile $dataFilePath `
-    -LogWriteDirectory $logsPath
+    -LogWriteDirectory $logsPath `
+    -ConcurrentThreads 4 `
+    -EnabledBatchMode `
+    -BatchSize 100
