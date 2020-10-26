@@ -42,7 +42,10 @@ function Add-FetchXmlToChildEntity
         [Parameter(Mandatory=$true)]
         [string]$ParentEntityName,
         [string]$ParentEntityLookupName = "$($ParentEntityName)id",
-        [string]$ParentEntityWebsiteLookupName = "adx_websiteid"
+        [string]$ParentEntityWebsiteLookupName = "adx_websiteid",
+        [string]$GrandparentEntityName,
+        [string]$GrandparentEntityLookupName = "$($GrandParentEntityName)id",
+        [string]$GrandparentEntityWebsiteLookupName = "adx_websiteid"
     )
 
     $entityNode = $schemaXml.SelectSingleNode("/entities/entity[@name='$EntityName']")
@@ -55,12 +58,24 @@ function Add-FetchXmlToChildEntity
         "<fetch>" +
             "<entity name=`"$EntityName`">" +
                 "<attribute name=`"$($EntityName)id`" />" +
-                "<link-entity name=`"adx_webfile`" from=`"adx_webfileid`" to=`"$ParentEntityLookupName`">" +
-                    "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"$ParentEntityWebsiteLookupName`">" +
-                        "<filter>" +
-                            "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
-                        "</filter>" +
-                    "</link-entity>" +
+                "<link-entity name=`"$ParentEntityName`" from=`"$ParentEntityLookupName`" to=`"$($ParentEntityName)id`">" +
+                    (% {
+                        if([string]::IsNullOrEmpty($GrandParentEntityName)) {
+                            "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"$ParentEntityWebsiteLookupName`">" +
+                                "<filter>" +
+                                    "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
+                                "</filter>" +
+                            "</link-entity>"
+                        } else {
+                            "<link-entity name=`"$GrandparentEntityName`" from=`"$GrandparentEntityLookupName`" to=`"$($GrandparentEntityName)id`">" +
+                                "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"$GrandparentEntityWebsiteLookupName`">" +
+                                    "<filter>" +
+                                        "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
+                                    "</filter>" +
+                                "</link-entity>" +
+                            "</link-entity>"
+                        }
+                    }) +
                 "</link-entity>" +
             "</entity>" +
         "</fetch>"
@@ -74,8 +89,30 @@ Add-FetchXmlToChildEntity `
 Add-FetchXmlToChildEntity `
     -EntityName "adx_weblink" `
     -ParentEntityName "adx_weblinkset"
-
-
-
+Add-FetchXmlToChildEntity `
+    -EntityName "adx_entityformmetadata" `
+    -ParentEntityName "adx_entityform" `
+    -ParentEntityLookupName "adx_entityform"
+Add-FetchXmlToChildEntity `
+    -EntityName "adx_webformmetadata" `
+    -ParentEntityName "adx_webformstep" `
+    -ParentEntityLookupName "adx_webformstep" `
+    -GrandparentEntityName "adx_webform" `
+    -GrandparentEntityLookupName "adx_webform"
+Add-FetchXmlToChildEntity `
+    -EntityName "adx_webformstep" `
+    -ParentEntityName "adx_webform" `
+    -ParentEntityLookupName "adx_webform"
+Add-FetchXmlToChildEntity `
+    -EntityName "adx_polloption" `
+    -ParentEntityName "adx_poll"
+Add-FetchXmlToChildEntity `
+    -EntityName "adx_communityforumannouncement" `
+    -ParentEntityName "adx_communityforum" `
+    -ParentEntityLookupName "adx_forumid"
+Add-FetchXmlToChildEntity `
+    -EntityName "adx_communityforumaccesspermission" `
+    -ParentEntityName "adx_communityforum" `
+    -ParentEntityLookupName "adx_forumid"
 
 $schemaXml.Save($Path)
