@@ -1,15 +1,21 @@
 param(
     $Connection,
+    $ConnectionString,
     [Parameter(Mandatory=$true)]
     [string]$FolderPath
 )
 
+. $PSScriptRoot\..\environment-setup\Add-ModulesPath.ps1
+
 if($Connection -eq $null)
 {
-    $Connection = (. $PSScriptRoot\..\cds\Get-CrmConnection.ps1)
+    if($ConnectionString -eq $null)
+    {
+        $Connection = (. $PSScriptRoot\..\cds\Get-CrmConnection.ps1)
+    } else {
+        $Connection = Get-CrmConnection $ConnectionString
+    }
 }
-
-. $PSScriptRoot\..\environment-setup\Add-ModulesPath.ps1
 
 $tempFolder = "$PSScriptRoot\..\temp"
 md $tempFolder -ErrorAction Ignore
@@ -32,6 +38,6 @@ Import-CrmDataFile `
     -CrmConnection $Connection `
     -DataFile $dataFilePath `
     -LogWriteDirectory $logsPath `
-    -ConcurrentThreads 4 `
+    -ConcurrentThreads 10 `
     -EnabledBatchMode `
-    -BatchSize 20
+    -BatchSize 10
