@@ -41,15 +41,3 @@ Clone this repository:
 ```PS
 git subrepo clone https://github.com/tyler-hogsett-microsoft/cds-powershell-quickstart powershell -b portals
 ```
-
-Install external libraries and add them to LFS:
-```PS
-.\powershell\setup\Install-NugetTools.ps1
-.\powershell\setup\Install-PowerShellModules.ps1
-git lfs install
-git lfs track powershell/modules/**
-git lfs track powershell/nuget-tools/**
-git add .gitattributes
-git add powershell/modules/**
-git add powershell/nuget-tools/**
-git commit -m "added external libraries via LFS"
