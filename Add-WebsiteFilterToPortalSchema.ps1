@@ -23,12 +23,10 @@ $entityNodes | ForEach-Object {
             "<fetch>" +
                 "<entity name=`"$($entityNode.name)`">" +
                     "<attribute name=`"$($entityNode.primaryidfield)`" />" +
-                    "<link-entity name=`"adx_webfile`" from=`"adx_webfileid`" to=`"regardingobjectid`">" +
-                        "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"adx_websiteid`">" +
-                            "<filter>" +
-                                "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
-                            "</filter>" +
-                        "</link-entity>" +
+                    "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"$($websiteLookupNode.name)`">" +
+                        "<filter>" +
+                            "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
+                        "</filter>" +
                     "</link-entity>" +
                 "</entity>" +
             "</fetch>"
@@ -46,10 +44,12 @@ $fetchXmlQuery = `
     "<fetch>" +
         "<entity name=`"annotation`">" +
             "<attribute name=`"annotationid`" />" +
-            "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"$($websiteLookupNode.name)`">" +
-                "<filter>" +
-                    "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
-                "</filter>" +
+            "<link-entity name=`"adx_webfile`" from=`"adx_webfileid`" to=`"regardingobjectid`">" +
+                "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"adx_websiteid`">" +
+                    "<filter>" +
+                        "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
+                    "</filter>" +
+                "</link-entity>" +
             "</link-entity>" +
         "</entity>" +
     "</fetch>"
