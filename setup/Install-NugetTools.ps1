@@ -1,7 +1,7 @@
-$tempFolder = "$PSScriptRoot\temp"
+$tempFolder = "$PSScriptRoot\..\temp"
 md $tempFolder -ErrorAction Ignore
 
-$toolsFolder = "$PSScriptRoot\nuget-tools"
+$toolsFolder = "$PSScriptRoot\..\nuget-tools"
 
 $sourceNugetExe = "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe"
 $targetNugetExe = "$tempFolder\nuget.exe"

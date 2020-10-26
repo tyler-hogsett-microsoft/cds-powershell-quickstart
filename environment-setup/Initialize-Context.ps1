@@ -38,6 +38,8 @@ param(
   [string]$Domain
 )
 
+$localConfigPath = "$PSScriptRoot\..\local.config.json"
+
 $context = @{
   Url = $Url
 }
@@ -60,4 +62,4 @@ if($UseBasicAuthentication)
 }
 
 $context | ConvertTo-Json `
-| Out-File "$PSScriptRoot\local.config.json"
+| Out-File $localConfigPath

@@ -1,8 +1,12 @@
 param(
-  $Context = (. "$PSScriptRoot\Get-Context.ps1")
+  $Context
 )
+if($Context -eq $null)
+{
+  $Context = (. "$PSScriptRoot\..\environment-setup\Get-Context.ps1")
+}
 
-. $PSScriptRoot\Import-Module.ps1 "Microsoft.Xrm.Tooling.CrmConnector.Powershell"
+. $PSScriptRoot\..\environment-setup\Add-ModulesPath.ps1
 
 function ConvertTo-UnsecureString {
   param(

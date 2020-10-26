@@ -1,14 +1,19 @@
 param(
-    $Connection = (. $PSScriptRoot\Get-CrmConnection.ps1),
+    $Connection,
     [Parameter(Mandatory=$true)]
     [string]$SchemaFilePath,
     [Parameter(Mandatory=$true)]
     [string]$TargetFolderPath
 )
 
-. $PSScriptRoot\Import-Module.ps1 Microsoft.Xrm.Tooling.ConfigurationMigration
+if($Connection -eq $null)
+{
+    $Connection = (. $PSScriptRoot\..\cds\Get-CrmConnection.ps1)
+}
 
-$tempFolder = "$PSScriptRoot\temp"
+. $PSScriptRoot\..\environment-setup\Add-ModulesPath.ps1
+
+$tempFolder = "$PSScriptRoot\..\temp"
 md $tempFolder -ErrorAction Ignore
 
 $dataFilePath = "$tempFolder\portal-data.zip"
