@@ -34,4 +34,4 @@ Import-CrmDataFile `
     -LogWriteDirectory $logsPath `
     -ConcurrentThreads 4 `
     -EnabledBatchMode `
-    -BatchSize 100
+    -BatchSize 20
