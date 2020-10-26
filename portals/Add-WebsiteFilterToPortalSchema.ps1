@@ -44,7 +44,7 @@ $fetchXmlQuery = `
     "<fetch>" +
         "<entity name=`"annotation`">" +
             "<attribute name=`"annotationid`" />" +
-            "<link-entity name=`"adx_webfile`" from=`"adx_webfileid`" to=`"regardingobjectid`">" +
+            "<link-entity name=`"adx_webfile`" from=`"adx_webfileid`" to=`"objectid`">" +
                 "<link-entity name=`"adx_website`" from=`"adx_websiteid`" to=`"adx_websiteid`">" +
                     "<filter>" +
                         "<condition attribute=`"adx_name`" operator=`"eq`" value=`"$WebsiteName`" />" +
