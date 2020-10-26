@@ -1,0 +1,473 @@
+
+<entities xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timestamp="2020-10-26T19:12:33.7452596Z">
+  <entity name="adx_portallanguage" displayname="Portal Language">
+    <records>
+      <record id="5463fe95-f8d1-468a-a35f-03a1a32df90e">
+        <field name="adx_languagecode" value="th-TH" />
+        <field name="adx_lcid" value="1054" />
+        <field name="adx_name" value="Thai - Thailand" />
+        <field name="adx_displayname" value="ไทย" />
+        <field name="adx_portallanguageid" value="5463fe95-f8d1-468a-a35f-03a1a32df90e" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1054" />
+      </record>
+      <record id="259e0904-bddb-410b-b106-0f76f406a944">
+        <field name="adx_languagecode" value="uk-UA" />
+        <field name="adx_lcid" value="1058" />
+        <field name="adx_name" value="Ukrainian - Ukraine" />
+        <field name="adx_displayname" value="українська" />
+        <field name="adx_portallanguageid" value="259e0904-bddb-410b-b106-0f76f406a944" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1058" />
+      </record>
+      <record id="8fd0f193-a4c3-4ca5-9d39-0fea64ca777c">
+        <field name="adx_languagecode" value="zh-CN" />
+        <field name="adx_lcid" value="2052" />
+        <field name="adx_name" value="Chinese - China" />
+        <field name="adx_displayname" value="中文(中国)" />
+        <field name="adx_portallanguageid" value="8fd0f193-a4c3-4ca5-9d39-0fea64ca777c" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="2052" />
+      </record>
+      <record id="98127fd5-2661-4137-ae4d-163a954de66c">
+        <field name="adx_languagecode" value="pt-PT" />
+        <field name="adx_lcid" value="2070" />
+        <field name="adx_name" value="Portuguese - Portugal" />
+        <field name="adx_displayname" value="portugu&amp;#234;s (Portugal)" />
+        <field name="adx_portallanguageid" value="98127fd5-2661-4137-ae4d-163a954de66c" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="2070" />
+      </record>
+      <record id="1c23f830-502a-40b5-8cf2-199d7cb5f73b">
+        <field name="adx_languagecode" value="nl-NL" />
+        <field name="adx_lcid" value="1043" />
+        <field name="adx_name" value="Dutch - Netherlands" />
+        <field name="adx_displayname" value="Nederlands" />
+        <field name="adx_portallanguageid" value="1c23f830-502a-40b5-8cf2-199d7cb5f73b" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1043" />
+      </record>
+      <record id="0e1a632e-3547-46d6-9e77-24bfb5bed789">
+        <field name="adx_languagecode" value="da-DK" />
+        <field name="adx_lcid" value="1030" />
+        <field name="adx_name" value="Danish - Denmark" />
+        <field name="adx_displayname" value="dansk" />
+        <field name="adx_portallanguageid" value="0e1a632e-3547-46d6-9e77-24bfb5bed789" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1030" />
+      </record>
+      <record id="20f75da7-7478-4dc1-8b0e-3054aba504dd">
+        <field name="adx_languagecode" value="ro-RO" />
+        <field name="adx_lcid" value="1048" />
+        <field name="adx_name" value="Romanian - Romania" />
+        <field name="adx_displayname" value="rom&amp;#226;nă" />
+        <field name="adx_portallanguageid" value="20f75da7-7478-4dc1-8b0e-3054aba504dd" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1048" />
+      </record>
+      <record id="09fa2f5b-40b1-42d5-813a-33c7f5353314">
+        <field name="adx_languagecode" value="ca-ES" />
+        <field name="adx_lcid" value="1027" />
+        <field name="adx_name" value="Catalan - Catalan" />
+        <field name="adx_displayname" value="catal&amp;#224;" />
+        <field name="adx_portallanguageid" value="09fa2f5b-40b1-42d5-813a-33c7f5353314" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1027" />
+      </record>
+      <record id="08aa906b-15e7-49f4-aa75-39d43fb844cb">
+        <field name="adx_languagecode" value="ja-JP" />
+        <field name="adx_lcid" value="1041" />
+        <field name="adx_name" value="Japanese - Japan" />
+        <field name="adx_displayname" value="日本語" />
+        <field name="adx_portallanguageid" value="08aa906b-15e7-49f4-aa75-39d43fb844cb" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1041" />
+      </record>
+      <record id="6371afaf-e13d-45c9-aa95-3ee7ee62dd7d">
+        <field name="adx_languagecode" value="en-US" />
+        <field name="adx_lcid" value="1033" />
+        <field name="adx_name" value="English" />
+        <field name="adx_displayname" value="English" />
+        <field name="adx_portallanguageid" value="6371afaf-e13d-45c9-aa95-3ee7ee62dd7d" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1033" />
+      </record>
+      <record id="bbd9b38a-4979-45c7-a5ed-3f634055edea">
+        <field name="adx_languagecode" value="fi-FI" />
+        <field name="adx_lcid" value="1035" />
+        <field name="adx_name" value="Finnish - Finland" />
+        <field name="adx_displayname" value="suomi" />
+        <field name="adx_portallanguageid" value="bbd9b38a-4979-45c7-a5ed-3f634055edea" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1035" />
+      </record>
+      <record id="cbc69f68-f39c-4677-a082-4269d46cbb1a">
+        <field name="adx_languagecode" value="lv-LV" />
+        <field name="adx_lcid" value="1062" />
+        <field name="adx_name" value="Latvian - Latvia" />
+        <field name="adx_displayname" value="latviešu" />
+        <field name="adx_portallanguageid" value="cbc69f68-f39c-4677-a082-4269d46cbb1a" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1062" />
+      </record>
+      <record id="de918eed-fc67-4848-956a-4b3be9dfd5ad">
+        <field name="adx_languagecode" value="kk-KZ" />
+        <field name="adx_lcid" value="1087" />
+        <field name="adx_name" value="Kazakh - Kazakhstan" />
+        <field name="adx_displayname" value="қазақ тілі" />
+        <field name="adx_portallanguageid" value="de918eed-fc67-4848-956a-4b3be9dfd5ad" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1087" />
+      </record>
+      <record id="60f375ca-e8cf-40e3-bfc9-4ee921b7b80f">
+        <field name="adx_languagecode" value="es-ES" />
+        <field name="adx_lcid" value="3082" />
+        <field name="adx_name" value="Spanish (Traditional Sort) - Spain" />
+        <field name="adx_displayname" value="espa&amp;#241;ol" />
+        <field name="adx_portallanguageid" value="60f375ca-e8cf-40e3-bfc9-4ee921b7b80f" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="3082" />
+      </record>
+      <record id="8cc04df4-550f-4ef1-aaeb-516077780a16">
+        <field name="adx_languagecode" value="fr-FR" />
+        <field name="adx_lcid" value="1036" />
+        <field name="adx_name" value="French - France" />
+        <field name="adx_displayname" value="fran&amp;#231;ais" />
+        <field name="adx_portallanguageid" value="8cc04df4-550f-4ef1-aaeb-516077780a16" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1036" />
+      </record>
+      <record id="3ac0c75d-62fb-4c7d-af38-6425a5af9330">
+        <field name="adx_languagecode" value="eu-ES" />
+        <field name="adx_lcid" value="1069" />
+        <field name="adx_name" value="Basque - Basque" />
+        <field name="adx_displayname" value="euskara" />
+        <field name="adx_portallanguageid" value="3ac0c75d-62fb-4c7d-af38-6425a5af9330" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1069" />
+      </record>
+      <record id="52dca794-e139-4bcd-9019-6ac1a01c8b53">
+        <field name="adx_languagecode" value="it-IT" />
+        <field name="adx_lcid" value="1040" />
+        <field name="adx_name" value="Italian - Italy" />
+        <field name="adx_displayname" value="italiano" />
+        <field name="adx_portallanguageid" value="52dca794-e139-4bcd-9019-6ac1a01c8b53" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1040" />
+      </record>
+      <record id="f5f718b5-37ce-4367-8fe8-6d528596d502">
+        <field name="adx_languagecode" value="sv-SE" />
+        <field name="adx_lcid" value="1053" />
+        <field name="adx_name" value="Swedish - Sweden" />
+        <field name="adx_displayname" value="svenska" />
+        <field name="adx_portallanguageid" value="f5f718b5-37ce-4367-8fe8-6d528596d502" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1053" />
+      </record>
+      <record id="e37500f3-a300-4d6a-a8c3-6fb4627ef1fe">
+        <field name="adx_languagecode" value="gl-ES" />
+        <field name="adx_lcid" value="1110" />
+        <field name="adx_name" value="Galician - Spain" />
+        <field name="adx_displayname" value="galego" />
+        <field name="adx_portallanguageid" value="e37500f3-a300-4d6a-a8c3-6fb4627ef1fe" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1110" />
+      </record>
+      <record id="36dde454-f225-4883-8dcd-72a5114d38fa">
+        <field name="adx_languagecode" value="pl-PL" />
+        <field name="adx_lcid" value="1045" />
+        <field name="adx_name" value="Polish - Poland" />
+        <field name="adx_displayname" value="polski" />
+        <field name="adx_portallanguageid" value="36dde454-f225-4883-8dcd-72a5114d38fa" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1045" />
+      </record>
+      <record id="1f15bdf6-539a-4621-8f72-74f48df68f74">
+        <field name="adx_languagecode" value="hr-HR" />
+        <field name="adx_lcid" value="1050" />
+        <field name="adx_name" value="Croatian - Croatia" />
+        <field name="adx_displayname" value="hrvatski" />
+        <field name="adx_portallanguageid" value="1f15bdf6-539a-4621-8f72-74f48df68f74" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1050" />
+      </record>
+      <record id="b0653e38-5c82-4f28-9d28-77b378ce565d">
+        <field name="adx_languagecode" value="hi-IN" />
+        <field name="adx_lcid" value="1081" />
+        <field name="adx_name" value="Hindi - India" />
+        <field name="adx_displayname" value="हिंदी" />
+        <field name="adx_portallanguageid" value="b0653e38-5c82-4f28-9d28-77b378ce565d" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1081" />
+      </record>
+      <record id="5ed11ca3-af4e-4055-b75a-81b163e3a146">
+        <field name="adx_languagecode" value="sr-Latn-CS" />
+        <field name="adx_lcid" value="2074" />
+        <field name="adx_name" value="Serbian (Latin) - Serbia" />
+        <field name="adx_displayname" value="srpski" />
+        <field name="adx_portallanguageid" value="5ed11ca3-af4e-4055-b75a-81b163e3a146" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="2074" />
+      </record>
+      <record id="58ed2765-3163-4222-bfd9-85227d60882c">
+        <field name="adx_languagecode" value="sr-Cyrl-CS" />
+        <field name="adx_lcid" value="3098" />
+        <field name="adx_name" value="Serbian (Cyrillic) - Serbia" />
+        <field name="adx_displayname" value="српски" />
+        <field name="adx_portallanguageid" value="58ed2765-3163-4222-bfd9-85227d60882c" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="3098" />
+      </record>
+      <record id="40b46a8b-eaf8-4f2b-a2ec-85b5c39e7c4b">
+        <field name="adx_languagecode" value="ko-KR" />
+        <field name="adx_lcid" value="1042" />
+        <field name="adx_name" value="Korean - Korea" />
+        <field name="adx_displayname" value="한국어" />
+        <field name="adx_portallanguageid" value="40b46a8b-eaf8-4f2b-a2ec-85b5c39e7c4b" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1042" />
+      </record>
+      <record id="2ece2dd8-0870-4cfc-8d24-8aa938129153">
+        <field name="adx_languagecode" value="cs-CZ" />
+        <field name="adx_lcid" value="1029" />
+        <field name="adx_name" value="Czech - Czech Republic" />
+        <field name="adx_displayname" value="čeština" />
+        <field name="adx_portallanguageid" value="2ece2dd8-0870-4cfc-8d24-8aa938129153" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1029" />
+      </record>
+      <record id="78acf2cd-137c-49bf-a7e4-8f3aca9cf30c">
+        <field name="adx_languagecode" value="et-EE" />
+        <field name="adx_lcid" value="1061" />
+        <field name="adx_name" value="Estonian - Estonia" />
+        <field name="adx_displayname" value="eesti" />
+        <field name="adx_portallanguageid" value="78acf2cd-137c-49bf-a7e4-8f3aca9cf30c" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1061" />
+      </record>
+      <record id="57182529-3df1-4f50-9060-a01fee7683cc">
+        <field name="adx_languagecode" value="id-ID" />
+        <field name="adx_lcid" value="1057" />
+        <field name="adx_name" value="Indonesian - Indonesia" />
+        <field name="adx_displayname" value="Bahasa Indonesia" />
+        <field name="adx_portallanguageid" value="57182529-3df1-4f50-9060-a01fee7683cc" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1057" />
+      </record>
+      <record id="f8166eb9-c315-44a4-bbe2-a0405eadb6c3">
+        <field name="adx_languagecode" value="pt-BR" />
+        <field name="adx_lcid" value="1046" />
+        <field name="adx_name" value="Portuguese - Brazil" />
+        <field name="adx_displayname" value="portugu&amp;#234;s (Brasil)" />
+        <field name="adx_portallanguageid" value="f8166eb9-c315-44a4-bbe2-a0405eadb6c3" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1046" />
+      </record>
+      <record id="2f4bef8f-7a40-4883-b0cc-a13ed039ef56">
+        <field name="adx_languagecode" value="bg-BG" />
+        <field name="adx_lcid" value="1026" />
+        <field name="adx_name" value="Bulgarian - Bulgaria" />
+        <field name="adx_displayname" value="български" />
+        <field name="adx_portallanguageid" value="2f4bef8f-7a40-4883-b0cc-a13ed039ef56" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1026" />
+      </record>
+      <record id="fe41ee57-b579-45b1-80a1-b16671e2cee0">
+        <field name="adx_languagecode" value="ru-RU" />
+        <field name="adx_lcid" value="1049" />
+        <field name="adx_name" value="Russian - Russia" />
+        <field name="adx_displayname" value="русский" />
+        <field name="adx_portallanguageid" value="fe41ee57-b579-45b1-80a1-b16671e2cee0" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1049" />
+      </record>
+      <record id="c418a85f-8eaa-43d7-9343-b7bc07812ced">
+        <field name="adx_languagecode" value="sl-SI" />
+        <field name="adx_lcid" value="1060" />
+        <field name="adx_name" value="Slovenian - Slovenia" />
+        <field name="adx_displayname" value="slovenščina" />
+        <field name="adx_portallanguageid" value="c418a85f-8eaa-43d7-9343-b7bc07812ced" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1060" />
+      </record>
+      <record id="ea2bd035-d7be-4daf-9427-ba754733a697">
+        <field name="adx_languagecode" value="lt-LT" />
+        <field name="adx_lcid" value="1063" />
+        <field name="adx_name" value="Lithuanian - Lithuania" />
+        <field name="adx_displayname" value="lietuvių" />
+        <field name="adx_portallanguageid" value="ea2bd035-d7be-4daf-9427-ba754733a697" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1063" />
+      </record>
+      <record id="276a0e02-14e1-42c7-9f9b-bf092a9b6b6d">
+        <field name="adx_languagecode" value="zh-HK" />
+        <field name="adx_lcid" value="3076" />
+        <field name="adx_name" value="Chinese - Hong Kong SAR" />
+        <field name="adx_displayname" value="中文(香港特別行政區)" />
+        <field name="adx_portallanguageid" value="276a0e02-14e1-42c7-9f9b-bf092a9b6b6d" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="3076" />
+      </record>
+      <record id="5373e031-3715-4cc6-8e85-c19898e14b32">
+        <field name="adx_languagecode" value="hu-HU" />
+        <field name="adx_lcid" value="1038" />
+        <field name="adx_name" value="Hungarian - Hungary" />
+        <field name="adx_displayname" value="magyar" />
+        <field name="adx_portallanguageid" value="5373e031-3715-4cc6-8e85-c19898e14b32" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1038" />
+      </record>
+      <record id="504147aa-3c66-4946-8f61-cad304c00940">
+        <field name="adx_languagecode" value="vi-VN" />
+        <field name="adx_lcid" value="1066" />
+        <field name="adx_name" value="Vietnamese - Vietnam" />
+        <field name="adx_displayname" value="Ti&amp;#234;́ng Việt" />
+        <field name="adx_portallanguageid" value="504147aa-3c66-4946-8f61-cad304c00940" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1066" />
+      </record>
+      <record id="cdf7eefe-b078-4722-9fa7-da8dd5321479">
+        <field name="adx_languagecode" value="zh-TW" />
+        <field name="adx_lcid" value="1028" />
+        <field name="adx_name" value="Chinese - Traditional" />
+        <field name="adx_displayname" value="中文(台灣)" />
+        <field name="adx_portallanguageid" value="cdf7eefe-b078-4722-9fa7-da8dd5321479" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1028" />
+      </record>
+      <record id="d2f8c545-8360-4d79-9b1b-de3a32085f72">
+        <field name="adx_languagecode" value="el-GR" />
+        <field name="adx_lcid" value="1032" />
+        <field name="adx_name" value="Greek - Greece" />
+        <field name="adx_displayname" value="Ελληνικά" />
+        <field name="adx_portallanguageid" value="d2f8c545-8360-4d79-9b1b-de3a32085f72" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1032" />
+      </record>
+      <record id="9e6040f3-a3af-41e0-809a-dfe309d742d8">
+        <field name="adx_languagecode" value="de-DE" />
+        <field name="adx_lcid" value="1031" />
+        <field name="adx_name" value="German - Germany" />
+        <field name="adx_displayname" value="Deutsch" />
+        <field name="adx_portallanguageid" value="9e6040f3-a3af-41e0-809a-dfe309d742d8" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1031" />
+      </record>
+      <record id="e32de0af-f135-44f2-ac50-e0ad7dd31def">
+        <field name="adx_languagecode" value="nb-NO" />
+        <field name="adx_lcid" value="1044" />
+        <field name="adx_name" value="Norwegian (Bokm&amp;#229;l) - Norway" />
+        <field name="adx_displayname" value="norsk bokm&amp;#229;l" />
+        <field name="adx_portallanguageid" value="e32de0af-f135-44f2-ac50-e0ad7dd31def" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1044" />
+      </record>
+      <record id="461cfa60-a5b8-4803-b2af-e4f528881c47">
+        <field name="adx_languagecode" value="tr-TR" />
+        <field name="adx_lcid" value="1055" />
+        <field name="adx_name" value="Turkish - Turkey" />
+        <field name="adx_displayname" value="T&amp;#252;rk&amp;#231;e" />
+        <field name="adx_portallanguageid" value="461cfa60-a5b8-4803-b2af-e4f528881c47" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1055" />
+      </record>
+      <record id="cfa1408e-6247-486a-8abc-f383bc5fed92">
+        <field name="adx_languagecode" value="sk-SK" />
+        <field name="adx_lcid" value="1051" />
+        <field name="adx_name" value="Slovak - Slovakia" />
+        <field name="adx_displayname" value="slovenčina" />
+        <field name="adx_portallanguageid" value="cfa1408e-6247-486a-8abc-f383bc5fed92" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1051" />
+      </record>
+      <record id="be6179c7-abcd-4ba9-9c5f-f876a0506941">
+        <field name="adx_languagecode" value="ms-MY" />
+        <field name="adx_lcid" value="1086" />
+        <field name="adx_name" value="Malay - Malaysia" />
+        <field name="adx_displayname" value="Bahasa Melayu" />
+        <field name="adx_portallanguageid" value="be6179c7-abcd-4ba9-9c5f-f876a0506941" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_systemlanguage" value="1086" />
+      </record>
+    </records>
+    <m2mrelationships />
+  </entity>
+  <entity name="adx_setting" displayname="Setting">
+    <records>
+      <record id="99642a9f-e508-eb11-a813-000d3a4e3654">
+        <field name="adx_name" value="PackageImportComplete" />
+        <field name="adx_settingid" value="99642a9f-e508-eb11-a813-000d3a4e3654" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_value" value="2ab10dab-d681-4911-b881-cc99413f07b6" />
+      </record>
+      <record id="672313b6-2be2-ea11-a813-000d3a579c34">
+        <field name="adx_name" value="PackageImportComplete" />
+        <field name="adx_settingid" value="672313b6-2be2-ea11-a813-000d3a579c34" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_value" value="d78574f9-20c3-4dcc-8d8d-85cf5b7ac141" />
+      </record>
+      <record id="47f27429-b68f-e611-80db-00155d4fee01">
+        <field name="adx_description" value="Setting that determines the number of default access levels allowed." />
+        <field name="adx_name" value="KnowledgeManagement/ContentAccessLevel/DefaultAccessLevelsCount" />
+        <field name="adx_settingid" value="47f27429-b68f-e611-80db-00155d4fee01" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_value" value="1" />
+      </record>
+      <record id="a0289a4e-1959-4ded-9295-ea46fe896963">
+        <field name="adx_description" value="Setting that determines if default content access levels are associated with new knowledge articles automatically. When an article is versioned or translated, content access levels are copied to the new version or translation." />
+        <field name="adx_name" value="KnowledgeManagement/ContentAccessLevel/AssociateAccessLevelsToArticles" />
+        <field name="adx_settingid" value="a0289a4e-1959-4ded-9295-ea46fe896963" />
+        <field name="statecode" value="0" />
+        <field name="statuscode" value="1" />
+        <field name="adx_value" value="True" />
+      </record>
+    </records>
+    <m2mrelationships />
+  </entity>
+</entities>
