@@ -13,7 +13,7 @@ if($Connection -eq $null)
     {
         $Connection = (. $PSScriptRoot\..\cds\Get-CrmConnection.ps1)
     } else {
-        $Connection = Get-CrmConnection $ConnectionString
+        $Connection = Get-CrmConnection -ConnectionString $ConnectionString
     }
 }
 
