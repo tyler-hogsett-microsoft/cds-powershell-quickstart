@@ -39,7 +39,8 @@ Compress-Archive "$doctoredFolderPath/*" $doctoredSolutionPath
 
 Import-CrmSolution `
     -conn $Connection `
-    -SolutionFilePath $doctoredSolutionPath
+    -SolutionFilePath $doctoredSolutionPath `
+    -AsyncOperationImportMethod
 
 Publish-CrmAllCustomization `
     -conn $Connection
