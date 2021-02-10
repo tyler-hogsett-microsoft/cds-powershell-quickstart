@@ -37,17 +37,9 @@ Copy-Item $SourceFolderPath $preSolutionPackagerDoctoredFolderPath -Recurse
 $postSolutionPackagerDoctoredFolderPath = "$tempFolder\post-solution-packager-doctored-solution"
 Remove-Item $postSolutionPackagerDoctoredFolderPath -Recurse -Force -ErrorAction Ignore
 
-Expand-Archive $solutionFilePath $postSolutionPackagerDoctoredFolderPath
-Rename-Item "$postSolutionPackagerDoctoredFolderPath\Customizations.xml" "customizations.xml"
-Rename-Item "$postSolutionPackagerDoctoredFolderPath\Solution.xml" "solution.xml"
-
-$doctoredSolutionPath = "$tempFolder\doctored-solution.zip"
-Remove-Item $doctoredSolutionPath -ErrorAction Ignore
-Compress-Archive "$postSolutionPackagerDoctoredFolderPath/*" $doctoredSolutionPath
-
 Import-CrmSolution `
     -conn $Connection `
-    -SolutionFilePath $doctoredSolutionPath `
+    -SolutionFilePath $solutionFilePath `
     -AsyncOperationImportMethod
 
 if(-not $Managed) {
