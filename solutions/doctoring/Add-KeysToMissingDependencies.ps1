@@ -51,6 +51,9 @@ function Convert-NodeToIdentifier
   } elseif($node.HasAttribute("id")) {
     $id = $node.id
     $identifier = "$type - $id"
+  } elseif($node.HasAttribute("id.connectionreferencelogicalname")) {
+    $id = $node["id.connectionreferencelogicalname"]
+    $identifier = "$type - $id"
   } else {
     Write-Error "MissingDependency sub-node does not have any discernible identifiers: $($node.OuterXML)"
     Exit 1
