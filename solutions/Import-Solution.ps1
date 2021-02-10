@@ -34,9 +34,6 @@ Copy-Item $SourceFolderPath $preSolutionPackagerDoctoredFolderPath -Recurse
     -PackageType $(if($Managed) { "Managed" } else { "Unmanaged" }) `
     -Folder $preSolutionPackagerDoctoredFolderPath
 
-$postSolutionPackagerDoctoredFolderPath = "$tempFolder\post-solution-packager-doctored-solution"
-Remove-Item $postSolutionPackagerDoctoredFolderPath -Recurse -Force -ErrorAction Ignore
-
 Import-CrmSolution `
     -conn $Connection `
     -SolutionFilePath $solutionFilePath `
