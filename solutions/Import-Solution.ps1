@@ -22,6 +22,7 @@ $solutionFilePath = "$PSScriptRoot\..\temp\solution.zip"
 Import-CrmSolution `
     -conn $Connection `
     -SolutionFilePath $solutionFilePath `
+    -ActivatePlugIns `
     -AsyncOperationImportMethod
 
 if(-not $Managed) {
