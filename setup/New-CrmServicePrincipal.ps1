@@ -162,6 +162,8 @@ function calculateSecretKey {
 }
 
 & $PSScriptRoot\..\environment-setup\Add-ModulesPath.ps1
+Import-Module AzureAD
+Import-Module Microsoft.PowerApps.Administration.PowerShell
 $ErrorActionPreference = "Stop"
 $tenantId = reconnectAAD
 
