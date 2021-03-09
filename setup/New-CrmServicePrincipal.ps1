@@ -161,7 +161,7 @@ function calculateSecretKey {
     return $secret
 }
 
-& $PSScriptRoot\..\Add-ModulesPath.ps1
+& $PSScriptRoot\..\environment-setup\Add-ModulesPath.ps1
 $ErrorActionPreference = "Stop"
 $tenantId = reconnectAAD
 
