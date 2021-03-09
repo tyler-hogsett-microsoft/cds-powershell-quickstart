@@ -26,6 +26,6 @@ function Install-ModuleLocally {
 Install-ModuleLocally "Microsoft.Xrm.Tooling.CrmConnector.Powershell"
 Install-ModuleLocally "Microsoft.Xrm.Tooling.ConfigurationMigration"
 Install-ModuleLocally "Microsoft.Xrm.Data.Powershell"
-Install-ModuleLocally "Microsoft.PowerApps.Administration.PowerShell" -Version "2.0.108"
+Install-ModuleLocally "Microsoft.PowerApps.Administration.PowerShell"
 Install-ModuleLocally "Microsoft.PowerApps.PowerShell"
-Install-ModuleLocally "AzureAD"
+Install-ModuleLocally "AzureAD" -Version "2.0.2.76"
