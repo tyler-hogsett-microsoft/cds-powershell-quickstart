@@ -65,35 +65,6 @@ $adminUrls = @{
     "Canada"		            =	"https://admin.services.crm3.dynamics.com"
     "UnitedKingdom"	            =	"https://admin.services.crm11.dynamics.com"
     "France"		            =	"https://admin.services.crm12.dynamics.com"
-    }
-
-    function ensureModules {
-    $dependencies = @(
-        # the more general and modern "Az" a "AzureRM" do not have proper support to manage permissions
-        @{ Name = "AzureAD"; Version = [Version]"2.0.2.76"; "InstallWith" = "Install-Module -Name AzureAD -AllowClobber -Scope CurrentUser" },
-        @{ Name = "Microsoft.PowerApps.Administration.PowerShell"; Version = [Version]"2.0.108"; "InstallWith" = "Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -AllowClobber -Scope CurrentUser"}
-    )
-    $missingDependencies = $false
-    $dependencies | ForEach-Object -Process {
-        $moduleName = $_.Name
-        $deps = (Get-Module -ListAvailable -Name $moduleName `
-            | Sort-Object -Descending -Property Version)
-        if ($deps -eq $null) {
-            Write-Error "Required module not installed; install from PowerShell prompt with: '$($_.InstallWith)'"
-            $missingDependencies = $true
-            return
-        }
-        $dep = $deps[0]
-        if ($dep.Version -lt $_.Version) {
-            Write-Error "Required module installed but does not meet minimal required version: found: $($dep.Version), required: >= $($_.Version); run: 'Update-Module '$($_.Name)'"
-            $missingDependencies = $true
-            return
-        }
-        Import-Module $moduleName
-    }
-    if ($missingDependencies) {
-        throw "Missing required dependencies!"
-    }
 }
 
 function connectAAD {
@@ -190,7 +161,7 @@ function calculateSecretKey {
     return $secret
 }
 
-ensureModules
+& $PSScriptRoot\..\Add-ModulesPath.ps1
 $ErrorActionPreference = "Stop"
 $tenantId = reconnectAAD
 
